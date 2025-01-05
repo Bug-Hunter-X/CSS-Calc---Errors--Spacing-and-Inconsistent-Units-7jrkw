@@ -1,0 +1,18 @@
+/* Correct use of calc() with proper spacing */
+#element {
+  width: calc(100% - 20px);
+  height: calc(50vh + 20px);
+}
+
+/*Correct use of calc() handling unit mixing */
+#element2 {
+  width: calc(100% - 20%);
+}
+
+/*Convert pixels to percentage if needed */
+:root{
+  --base: 100px;
+}
+#element3 {
+  height: calc(50% + (20px / var(--base) * 100%));
+} 
